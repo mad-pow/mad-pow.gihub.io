@@ -14262,7 +14262,7 @@ a.anchor-link {
 <h1 id="Analyzing-Missing-Persons-Data-from-NAMUS-and-NCMEC">Analyzing Missing Persons Data from NAMUS and NCMEC<a class="anchor-link" href="#Analyzing-Missing-Persons-Data-from-NAMUS-and-NCMEC">&#182;</a></h1><p>Tutorial by Madison Powers</p>
 <p>Motivation for this project/topic:
 The issue of missing persons is a signifigant and important social phenomenon. People go missing for a variety of reasons such as suicide, kidnapping, murder, escaping domestic abuse, etc. Not every missing person's case is criminal, for example some people go missing willingly. And others go missing due to accidents(hiking, drownings). Missing persons with a crimial element often include: kidnappings, child abductions, sex trafficing, murder, etc.</p>
-<p>Because data on missing persons has really only been collected and analyze beginning in the 20th century, there's not a long history of investigation and/or interest in missing persons cases. This is mainly because no one knew the full magnitude/scope of the problem. Now, by having all of these data available, we are able to scientifically look at the issue of mising persons.</p>
+<p>Because data on missing persons has really only been collected and analyzed beginning in the 20th century, there is not a long history of investigation and/or interest in missing persons cases. This is mainly because no one knew the full magnitude/scope of the problem. Now, by having all of these data available, we are able to scientifically look at the issue of mising persons.</p>
 <p>Another reason I wanted to explore missing persons data is because often times these cases are overlooked by the general public. Due to lack of either news coverage or familarity with the missing person, these cases can easily exist under the randar of most people. Think to yourself about the most famous missing persons cases. You'll soon realize that most of these cases have an element of noterity, fame, mystery, money, or intense emotion. If the person isn't famous, or their family doesn't have the resources to publicize their case, most people won't know about them being missing.</p>
 <p>Since we've only been able to recently explore this data in any depth, many opportunities remain to have signifigant impact on understanding the issue and bringing people home.</p>
 <p>The National Center for Missing &amp; Exploited Children(NCMEC): <a href="https://www.missingkids.org/HOME">https://www.missingkids.org/HOME</a>
@@ -14348,7 +14348,7 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.8
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Data-Importing-and-Wrangling">Data Importing and Wrangling<a class="anchor-link" href="#Data-Importing-and-Wrangling">&#182;</a></h1><p>For this project I will be using data from <a href="https://github.com/jcmack/missingpersons">https://github.com/jcmack/missingpersons</a> . This data derrives from The National Center for Missing &amp; Exploited Children(NCMEC) and The National Missing and Unidentified Persons System(NamUs). While the creator walks through a process on how to scrape data from these sites, I believe that it is a little out of the scope of this project(mainly time). As stated by the creator of the dataset, NAMUS and NCMEC don't have APIs/easy ways to access their data. Good news though, NamUs is currently working on an API. Which will make this process a lot easier in the future! Since, we're not in the future, I will be importing the data using pandas/json.</p>
+<h1 id="Data-Importing-and-Wrangling">Data Importing and Wrangling<a class="anchor-link" href="#Data-Importing-and-Wrangling">&#182;</a></h1><p>For this project I will be using data from <a href="https://github.com/jcmack/missingpersons">https://github.com/jcmack/missingpersons</a> . This data derrives from The National Center for Missing &amp; Exploited Children(NCMEC) and The National Missing and Unidentified Persons System(NamUs).Note: this dataset only focuses on missing persons cases in California. While the creator walks through a process on how to scrape data from these sites, I believe that it is a little out of the scope of this project(mainly time). As stated by the creator of the dataset, NAMUS and NCMEC don't have APIs/easy ways to access their data. Good news though, NamUs is currently working on an API. Which will make this process a lot easier in the future! Since, we're not in the future, I will be importing the data using pandas/json.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15149,7 +15149,7 @@ dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Data-Exploration-Part-1">Data Exploration Part 1<a class="anchor-link" href="#Data-Exploration-Part-1">&#182;</a></h1><p>When looking at this data, one of the first questions that came to mind was does number of missing persons correlate to population? I would expect the answer to be yes: more people, more missing people. This may seem pointless but, it is still important to take a look at this and see if there is anything out of the ordinary. If everything comes out as expected, I can move onto the next step, but if an outlier appears or something looks 'off' it might be worth it to investigate!</p>
+<h1 id="Data-Exploration-Part-1">Data Exploration Part 1<a class="anchor-link" href="#Data-Exploration-Part-1">&#182;</a></h1><p>When looking at this data, one of the first questions that came to mind was does the number of missing persons correlate to population? I would expect the answer to be yes: more people, more missing people. This may seem pointless but, it is still important to take a look at this and see if there is anything out of the ordinary. If everything comes out as expected, I can move onto the next step, but if an outlier appears or something looks 'off' it might be worth it to investigate!</p>
 <p>At first, I wanted to create a choropleth map of California using folium and coloring it based on number of missing persons, since visualizing the data in this way would make it easier to understand. I tried to use the county geometry I got from <a href="https://gis.data.ca.gov/datasets/CDTFA::city-and-county-boundaries/api">https://gis.data.ca.gov/datasets/CDTFA::city-and-county-boundaries/api</a> , but could not get it to work due to the shape of the array. So this version of this project will not include this but hopefully a future version will.</p>
 
 </div>
@@ -15912,7 +15912,7 @@ dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Summary-and-Conclusions-from-Part-1">Summary and Conclusions from Part 1<a class="anchor-link" href="#Summary-and-Conclusions-from-Part-1">&#182;</a></h1><p>When looking at the graphs its clear that as time goes on, population increases and so does the number of missing persons. One thing to point out about the second graph is that the overall trend is that the number of missing persons increases but, per year it varies and even decreases.</p>
+<h1 id="Summary-and-Conclusions-from-Part-1">Summary and Conclusions from Part 1<a class="anchor-link" href="#Summary-and-Conclusions-from-Part-1">&#182;</a></h1><p>When looking at the graphs its clear that as time goes on, population increases and so does the number of missing persons. One thing to point out about the second graph is that the overall trend is that the number of missing persons increases but, per year it varies and even decreases at some points.</p>
 
 </div>
 </div>
@@ -16398,7 +16398,7 @@ dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>While this graph helps to show that adults between 20 and 65 go missing the most, because the range for adults is so large, its hard to see a bigger pattern. Beacuse of this, I want to instead try making bins of equal sizes and seeing if it is easier to see a pattern and gain insight that way. In this case, I am splitting ages in to 10 bins which are 9 years 'long'.</p>
+<p>While this graph helps to show that adults between 20 and 65 go missing the most, because the range for adults is so large, it is hard to see a bigger pattern. Beacuse of this, I want to instead try making bins of equal sizes and seeing if it is easier to see a pattern and gain insight that way. In this case, I am splitting ages in to 10 bins which are 9 years 'long'.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -16970,13 +16970,13 @@ dtype: object</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Summary-and-Conclusions-from-Part-2">Summary and Conclusions from Part 2<a class="anchor-link" href="#Summary-and-Conclusions-from-Part-2">&#182;</a></h1><p>While the first graph helped show that teens and young adults go missing more than children and adults go missing more than seniors, it was hard to see any other patterns. By making the bins smaller and evenly sized, it was easier to see what age groups go missing the most, people aged 9-18,18-28, and 28-37 are the age groups with the most missing persons. This graph also helps to show there is a relationship between age and being missing.</p>
+<h1 id="Summary-and-Conclusions-from-Part-2">Summary and Conclusions from Part 2<a class="anchor-link" href="#Summary-and-Conclusions-from-Part-2">&#182;</a></h1><p>While the first graph helped demonstrate that teens and young adults go missing more than children and adults go missing more than seniors, it was hard to see any other patterns. By making the bins smaller and evenly sized, it was easier to see what age groups go missing the most, people aged 9-18,18-28, and 28-37 are the age groups with the most missing persons. This graph also helps to show there is a relationship between age and being missing.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Data-Exploration-Part-3">Data Exploration Part 3<a class="anchor-link" href="#Data-Exploration-Part-3">&#182;</a></h1><p>The last exploration I wanted to do in this project is to look at number of missing persons vs time of year. Do people go missing more during a certain season or holiday?</p>
+<h1 id="Data-Exploration-Part-3">Data Exploration Part 3<a class="anchor-link" href="#Data-Exploration-Part-3">&#182;</a></h1><p>The last exploration I wanted to do in this project is to examine the number of missing persons vs time of year. Do people go missing more during a certain season or holiday?</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -17240,7 +17240,7 @@ dtype: object</pre>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Summary-and-Conclusions-from-Part-3">Summary and Conclusions from Part 3<a class="anchor-link" href="#Summary-and-Conclusions-from-Part-3">&#182;</a></h1><p>A few things to note about this graph:</p>
-<p>My 'hunches'/guesses were incorrect! Besides the maximum in July, it seems that in most months between 80-120 people go missing. There are a lot of things that could explain this pattern. For the peak in July, one of the reasons that it could be that way is that people go hiking and are outdoors more in the summer. For the overall pattern, this makes a lot of sense when you look at the reasons as to why people go missing! As noted before, a majority of missing childrens cases are runaways. Adult missing cases are a little more complicated and there are more reasons as to why people are missing. A lot of the reasons are not dependent on time of year: crimes, suicides, voluntary disappearances, etc. In conclusion, time of year seems to have little effect on the number of people going missing.</p>
+<p>My 'hunches'/guesses were incorrect! Besides the maximum in July, it seems that in most months between 80-120 people go missing. There are a lot of things that could explain this pattern. For the peak in July, one of the reasons that it could be that way is that people go hiking and are outdoors more in the summer. For the overall pattern, this makes a lot of sense when you look at the reasons as to why people go missing! As noted before, a majority of missing childrens cases are runaways/endangered chilren. Adult missing cases are a little more complicated and there are more reasons as to why people are missing. A lot of the reasons are not dependent on time of year: crimes, suicides, voluntary disappearances, etc. In conclusion, time of year seems to have little effect on the number of people going missing.</p>
 <p>-<a href="https://missingpersonsinformation.ca/resources/reasons-why-adults-go-missing/">https://missingpersonsinformation.ca/resources/reasons-why-adults-go-missing/</a>
 -<a href="https://en.wikipedia.org/wiki/Missing_person#Reasons">https://en.wikipedia.org/wiki/Missing_person#Reasons</a>
 -<a href="https://www.missingpeople.org.uk/key-facts-about-missing">https://www.missingpeople.org.uk/key-facts-about-missing</a></p>
@@ -17390,7 +17390,8 @@ dtype: object</pre>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Some Comments about this linear regression:
 -While this model fits the points pretty well, it doesn't tell us much.
--In order to improve this model, I want to use two variables as the independent variables for the linear regression: year AND population.</p>
+-In order to improve this model, I want to use two variables as the independent variables for the linear regression: year AND population. 
+-So for this section not only will I use 2 indpendent variables, but also use scikit learn's train_test_split to have less bias in the linear regression model.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -17549,31 +17550,32 @@ Intercept: -8601.283311655585
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Summary-of-HT-and-ML:">Summary of HT and ML:<a class="anchor-link" href="#Summary-of-HT-and-ML:">&#182;</a></h1><p>Using year to predict number of missing persons seems to have a better outcome than using a combination of year and population.</p>
+<h1 id="Summary-of-HT-and-ML:">Summary of HT and ML:<a class="anchor-link" href="#Summary-of-HT-and-ML:">&#182;</a></h1><p>Using year to predict number of missing persons seems to have a better outcome than using a combination of year and population. In the future, it might be worth seeing if an interaction variable between year and county would have better prediction abilities.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Insights-Obtained/Conclusion/Wrapup">Insights Obtained/Conclusion/Wrapup<a class="anchor-link" href="#Insights-Obtained/Conclusion/Wrapup">&#182;</a></h1><p><a href="https://oag.ca.gov/missing/stats">https://oag.ca.gov/missing/stats</a></p>
+<h1 id="Insights-Obtained/Conclusion/Wrapup">Insights Obtained/Conclusion/Wrapup<a class="anchor-link" href="#Insights-Obtained/Conclusion/Wrapup">&#182;</a></h1><p>Population and number of missing persons are correlated. Age appears to correspond to number of missing persons. While the patterns and insights obtained from this dataset can be helpful, they very narrowly represent the state of California. An issue with this dataset, that I discovered, is that it is not representative of missing persons in the United States or California. After seeing a few 'blips' in this dataset I wanted to look and see if there were similar datasets out there. And the State of California Department of Justice has better statistics: <a href="https://oag.ca.gov/missing/stats">https://oag.ca.gov/missing/stats</a> . I think the main reason for this discrepancy is the fact that local and state police do not have to add missing persons cases into NCMEC or NamUs(<a href="https://www.biometrica.com/is-namus-reporting-required-in-your-state?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=is-namus-reporting-required-in-your-state-heres-a-look-at-state-legislation-on-the-missing-unidentified-persons-clearinghouse">https://www.biometrica.com/is-namus-reporting-required-in-your-state?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=is-namus-reporting-required-in-your-state-heres-a-look-at-state-legislation-on-the-missing-unidentified-persons-clearinghouse</a>). Because of this, NCMEC and NamUs lack a lot of data that state and local departments have. Because of this, I believe that you shouldn't use this data or the results of this data analysis to generalize too much about missing persons in California, since it could be wrong.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Resources">Resources<a class="anchor-link" href="#Resources">&#182;</a></h1><p>There are a lot of resources out there for coding. One of the best ways to start is to look at relevant documentation for libraries that you will be using or are curious about.</p>
-<p>A lot of missing persons resources have been linked throughout the project but I will add the most important ones here.</p>
+<p>A lot of missing persons resources have been linked throughout the project but I will highlight some of the important ones here.</p>
 <p>Coding:
--<a href="https://pandas.pydata.org/pandas-docs/stable/index.html">https://pandas.pydata.org/pandas-docs/stable/index.html</a>
--<a href="https://matplotlib.org/">https://matplotlib.org/</a>
--<a href="https://scikit-learn.org/stable/">https://scikit-learn.org/stable/</a>
--<a href="https://docs.python.org/3/library/json.html">https://docs.python.org/3/library/json.html</a>
-Data Science:
--<a href="https://towardsdatascience.com/">https://towardsdatascience.com/</a>
-Missing Persons:
--<a href="https://namus.nij.ojp.gov/">https://namus.nij.ojp.gov/</a>
--<a href="https://www.missingkids.org/HOME">https://www.missingkids.org/HOME</a>
--<a href="https://oag.ca.gov/missing/stats">https://oag.ca.gov/missing/stats</a></p>
+  -<a href="https://pandas.pydata.org/pandas-docs/stable/index.html">https://pandas.pydata.org/pandas-docs/stable/index.html</a>
+  -<a href="https://matplotlib.org/">https://matplotlib.org/</a>
+  -<a href="https://scikit-learn.org/stable/">https://scikit-learn.org/stable/</a>
+  -<a href="https://docs.python.org/3/library/json.html">https://docs.python.org/3/library/json.html</a>
+  -<a href="https://python-visualization.github.io/folium/quickstart.html">https://python-visualization.github.io/folium/quickstart.html</a>
+  Data Science:
+  -<a href="https://towardsdatascience.com/">https://towardsdatascience.com/</a>
+  Missing Persons:
+  -<a href="https://namus.nij.ojp.gov/">https://namus.nij.ojp.gov/</a>
+  -<a href="https://www.missingkids.org/HOME">https://www.missingkids.org/HOME</a>
+  -<a href="https://oag.ca.gov/missing/stats">https://oag.ca.gov/missing/stats</a></p>
 
 </div>
 </div>
